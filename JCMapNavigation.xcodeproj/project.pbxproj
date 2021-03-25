@@ -10,12 +10,13 @@
 		FC614D16260B4CF3007DF47C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC614D15260B4CF3007DF47C /* AppDelegate.m */; };
 		FC614D19260B4CF3007DF47C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC614D18260B4CF3007DF47C /* SceneDelegate.m */; };
 		FC614D1C260B4CF3007DF47C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC614D1B260B4CF3007DF47C /* ViewController.m */; };
-		FC614D1F260B4CF3007DF47C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC614D1D260B4CF3007DF47C /* Main.storyboard */; };
 		FC614D21260B4CF3007DF47C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC614D20260B4CF3007DF47C /* Assets.xcassets */; };
 		FC614D24260B4CF3007DF47C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC614D22260B4CF3007DF47C /* LaunchScreen.storyboard */; };
 		FC614D27260B4CF3007DF47C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC614D26260B4CF3007DF47C /* main.m */; };
 		FC614D31260B4CF4007DF47C /* JCMapNavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC614D30260B4CF4007DF47C /* JCMapNavigationTests.m */; };
 		FC614D3C260B4CF4007DF47C /* JCMapNavigationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC614D3B260B4CF4007DF47C /* JCMapNavigationUITests.m */; };
+		FC614D4F260B4D1E007DF47C /* MapNaviTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FC614D4E260B4D1E007DF47C /* MapNaviTool.m */; };
+		FC614D79260B52DA007DF47C /* UIWindow+CurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC614D78260B52DA007DF47C /* UIWindow+CurrentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,6 @@
 		FC614D18260B4CF3007DF47C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		FC614D1A260B4CF3007DF47C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FC614D1B260B4CF3007DF47C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FC614D1E260B4CF3007DF47C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC614D20260B4CF3007DF47C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC614D23260B4CF3007DF47C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC614D25260B4CF3007DF47C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +54,10 @@
 		FC614D37260B4CF4007DF47C /* JCMapNavigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCMapNavigationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC614D3B260B4CF4007DF47C /* JCMapNavigationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCMapNavigationUITests.m; sourceTree = "<group>"; };
 		FC614D3D260B4CF4007DF47C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC614D4D260B4D1E007DF47C /* MapNaviTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapNaviTool.h; sourceTree = "<group>"; };
+		FC614D4E260B4D1E007DF47C /* MapNaviTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapNaviTool.m; sourceTree = "<group>"; };
+		FC614D77260B52DA007DF47C /* UIWindow+CurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+CurrentViewController.h"; sourceTree = "<group>"; };
+		FC614D78260B52DA007DF47C /* UIWindow+CurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+CurrentViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +108,13 @@
 		FC614D13260B4CF3007DF47C /* JCMapNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				FC614D4C260B4D1E007DF47C /* MapNavi */,
 				FC614D14260B4CF3007DF47C /* AppDelegate.h */,
 				FC614D15260B4CF3007DF47C /* AppDelegate.m */,
 				FC614D17260B4CF3007DF47C /* SceneDelegate.h */,
 				FC614D18260B4CF3007DF47C /* SceneDelegate.m */,
 				FC614D1A260B4CF3007DF47C /* ViewController.h */,
 				FC614D1B260B4CF3007DF47C /* ViewController.m */,
-				FC614D1D260B4CF3007DF47C /* Main.storyboard */,
 				FC614D20260B4CF3007DF47C /* Assets.xcassets */,
 				FC614D22260B4CF3007DF47C /* LaunchScreen.storyboard */,
 				FC614D25260B4CF3007DF47C /* Info.plist */,
@@ -135,6 +139,17 @@
 				FC614D3D260B4CF4007DF47C /* Info.plist */,
 			);
 			path = JCMapNavigationUITests;
+			sourceTree = "<group>";
+		};
+		FC614D4C260B4D1E007DF47C /* MapNavi */ = {
+			isa = PBXGroup;
+			children = (
+				FC614D77260B52DA007DF47C /* UIWindow+CurrentViewController.h */,
+				FC614D78260B52DA007DF47C /* UIWindow+CurrentViewController.m */,
+				FC614D4D260B4D1E007DF47C /* MapNaviTool.h */,
+				FC614D4E260B4D1E007DF47C /* MapNaviTool.m */,
+			);
+			path = MapNavi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +256,6 @@
 			files = (
 				FC614D24260B4CF3007DF47C /* LaunchScreen.storyboard in Resources */,
 				FC614D21260B4CF3007DF47C /* Assets.xcassets in Resources */,
-				FC614D1F260B4CF3007DF47C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC614D1C260B4CF3007DF47C /* ViewController.m in Sources */,
+				FC614D4F260B4D1E007DF47C /* MapNaviTool.m in Sources */,
 				FC614D16260B4CF3007DF47C /* AppDelegate.m in Sources */,
 				FC614D27260B4CF3007DF47C /* main.m in Sources */,
+				FC614D79260B52DA007DF47C /* UIWindow+CurrentViewController.m in Sources */,
 				FC614D19260B4CF3007DF47C /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,14 +321,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FC614D1D260B4CF3007DF47C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC614D1E260B4CF3007DF47C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FC614D22260B4CF3007DF47C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
