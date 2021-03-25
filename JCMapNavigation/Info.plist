@@ -18,6 +18,13 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>qqmap</string>
+        <string>comgooglemaps</string>
+        <string>iosamap</string>
+        <string>baidumap</string>
+    </array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>
